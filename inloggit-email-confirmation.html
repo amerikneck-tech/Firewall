@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Confirm your email — inloggit</title>
+  <!--[if mso]>
+  <style>
+    table { border-collapse: collapse; }
+    .btn a { padding: 16px 44px !important; }
+  </style>
+  <![endif]-->
+  <style>
+    @media only screen and (max-width: 620px) {
+      .container {
+        width: 100% !important;
+      }
+
+      .px {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+      }
+
+      .h1 {
+        font-size: 26px !important;
+        line-height: 34px !important;
+      }
+    }
+  </style>
+</head>
+
+<body style="margin:0; padding:0; background-color:#f4f6f8; -webkit-text-size-adjust:100%;">
+
+  <!-- Preheader (hidden preview text in inbox) -->
+  <div style="display:none; max-height:0; overflow:hidden; mso-hide:all;">
+    Just one more step — confirm your email address to activate your inloggit account.
+  </div>
+
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#f4f6f8;">
+    <tr>
+      <td align="center" style="padding: 40px 16px;">
+
+        <!-- Main container -->
+        <table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0"
+          style="width:600px; max-width:600px; background-color:#191917; border-radius:20px; overflow:hidden;">
+
+          <!-- Top Banner -->
+          <tr>
+            <td align="center" style="padding: 0; background-color:#191917;">
+              <!-- Host inloggit-banner.png publicly on your server/CDN or use cid:inloggit-banner -->
+              <a href="{{website_url}}" target="_blank" style="display:block; text-decoration:none;">
+                <img src="{{banner_url}}" width="600" alt="inloggit"
+                  style="display:block; width:100%; max-width:600px; height:auto; border:0; outline:none; text-decoration:none;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- Heading -->
+          <tr>
+            <td align="center" class="px" style="padding: 4px 40px 0 40px;">
+              <h1 class="h1"
+                style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:30px; line-height:40px; font-weight:700; color:#ffffff;">
+                Confirm your email
+              </h1>
+            </td>
+          </tr>
+
+          <!-- Body text -->
+          <tr>
+            <td align="center" class="px" style="padding: 16px 48px 0 48px;">
+              <p
+                style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:26px; color:#c9c9c7;">
+                Hi{{#if user_name}} {{user_name}}{{/if}},<br><br>
+                Thanks for signing up! Click the button below to confirm your email address and activate your
+                <strong style="color:#ffffff;">inloggit</strong> account.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Primary CTA Button -->
+          <tr>
+            <td align="center" style="padding: 32px 40px 8px 40px;" class="px">
+              <table role="presentation" class="btn" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td align="center" bgcolor="#9CCDF8" style="border-radius:14px; mso-padding-alt:16px 44px;">
+                    <a href="{{confirmation_link}}" target="_blank"
+                      style="display:inline-block; padding:16px 44px; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:20px; font-weight:700; color:#191917; text-decoration:none; border-radius:14px;">
+                      Confirm Email
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Fallback link -->
+          <tr>
+            <td align="center" class="px" style="padding: 24px 48px 0 48px;">
+              <p
+                style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px; color:#8a8a88;">
+                If the button doesn't work, copy and paste this link into your browser:<br>
+                <a href="{{confirmation_link}}" target="_blank"
+                  style="color:#9CCDF8; word-break:break-all; text-decoration:underline;">{{confirmation_link}}</a>
+              </p>
+            </td>
+          </tr>
+
+          <!-- Expiration notice -->
+          <tr>
+            <td align="center" class="px" style="padding: 28px 48px 0 48px;">
+              <p
+                style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:22px; color:#8a8a88;">
+                This confirmation link is valid for <strong style="color:#c9c9c7;">24 hours</strong> and can only be
+                used once. If you didn't create an account, you can safely ignore this email.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td class="px" style="padding: 36px 48px 0 48px;">
+              <div style="border-top:1px solid #333331; font-size:0; line-height:0;">&nbsp;</div>
+            </td>
+          </tr>
+
+          <!-- Footer Logo -->
+          <tr>
+            <td align="center" class="px" style="padding: 28px 48px 14px 48px;">
+              <!-- Host inloggit-logo.png publicly on your server/CDN or use cid:inloggit-logo -->
+              <a href="{{website_url}}" target="_blank" style="display:inline-block; text-decoration:none;">
+                <img src="{{logo_url}}" width="42" height="42" alt="inloggit"
+                  style="display:block; width:42px; height:42px; border:0; border-radius:10px; outline:none; text-decoration:none;">
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td align="center" class="px" style="padding: 0 48px 40px 48px;">
+              <p
+                style="margin:0 0 8px 0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; color:#8a8a88;">
+                This is an automated message — please do not reply.
+              </p>
+              <p
+                style="margin:0; font-family:Arial, Helvetica, sans-serif; font-size:13px; line-height:20px; color:#6a6a68;">
+                © {{year}} inloggit ·
+                <a href="{{website_url}}" target="_blank" style="color:#9CCDF8; text-decoration:none;">Website</a> ·
+                <a href="{{support_url}}" target="_blank" style="color:#9CCDF8; text-decoration:none;">Support</a> ·
+                <a href="{{privacy_url}}" target="_blank" style="color:#9CCDF8; text-decoration:none;">Privacy Policy</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+        <!-- /Main container -->
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
